@@ -10,7 +10,6 @@
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:background="@drawable/image1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -35,21 +34,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/name"
-        app:layout_constraintBottom_toTopOf="@id/level_up_percent_num"/>
+        app:layout_constraintBottom_toTopOf="@id/level_up_percent"/>
 
     <TextView
-        android:id="@+id/level_up_percent_txt"
+        android:id="@+id/level_up_percent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@id/level_up_percent_num"
-        app:layout_constraintTop_toBottomOf="@id/btn_level_up"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-    <TextView
-        android:id="@+id/level_up_percent_num"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/level_up_percent_txt"
+        android:text="강화확률 50%"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_level_up"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
